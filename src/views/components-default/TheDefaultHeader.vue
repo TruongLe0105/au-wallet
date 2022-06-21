@@ -20,20 +20,20 @@
             class="white--text text-decoration--none"
             :to="{ name: ROUTES_HOME.HOW_IT_WORKS.NAME }"
           >
-            {{ $t('header.what-is-mew') }}
+            <!-- {{ $t('header.what-is-mew') }} -->
           </router-link>
-          <mew-menu
+          <!-- <mew-menu
             activator-text-color="white--text"
             :list-obj="menuObj"
             @goToPage="routeTo"
-          />
-          <a class="white--text text-decoration--none" @click="openMoonpay">
+          /> -->
+          <!-- <a class="white--text text-decoration--none" @click="openMoonpay">
             {{ $t('header.buy-eth') }}
-          </a>
+          </a> -->
         </v-col>
-        <v-col cols="4" class="text-right">
+        <!-- <v-col cols="4" class="text-right">
           <mew-tools class="ml-auto" />
-        </v-col>
+        </v-col> -->
       </v-row>
     </v-container>
   </div>

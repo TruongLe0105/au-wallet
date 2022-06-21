@@ -180,73 +180,73 @@ export default {
       if (this.online) {
         return [
           /* MEW wallet Button */
-          {
-            color: 'white',
-            title: 'MEW wallet',
-            subtitle: 'Connect MEW wallet app to MEW web',
-            note: '',
-            rightIcon: require('@/assets/images/icons/icon-mew-wallet.png'),
-            titleIcon: 'mdi-shield-check',
-            titleIconType: 'mdi',
-            titleIconClass: 'primary',
-            fn: () => {
-              this.openMEWconnect();
-            }
-          },
-          /* Browser Extension */
-          {
-            color: 'white',
-            title: 'Browser Extension',
-            subtitle: 'Use your web3 wallet with MEW.',
-            note: '',
-            rightIcon: require('@/assets/images/icons/icon-mew-cx.png'),
-            titleIcon: 'mdi-shield-check',
-            titleIconType: 'mdi',
-            titleIconClass: 'primary',
-            fn: () => {
-              this.openWeb3Wallet();
-            }
-          },
-          /* Hardware Wallet */
-          {
-            color: 'white',
-            title: 'Hardware Wallets',
-            subtitle: 'Ledger, Trezor, KeepKey, FINNEY, BitBox',
-            note: '',
-            rightIcon: require('@/assets/images/icons/icon-hardware-wallet.png'),
-            titleIcon: 'mdi-shield-check',
-            titleIconType: 'mdi',
-            titleIconClass: 'primary',
-            fn: () => {
-              this.openOverlay(ACCESS_VALID_OVERLAYS.HARDWARE);
-            }
-          },
-          /* Mobile Apps */
-          {
-            color: 'white',
-            title: 'Mobile Apps',
-            subtitle: 'WalletConnect, WalletLink',
-            note: '',
-            rightIcons: [
-              require('@/assets/images/icons/icon-wallet-connect.svg'),
-              require('@/assets/images/icons/icon-wallet-link.png')
-            ],
-            titleIcon: 'mdi-shield-check',
-            titleIconType: 'mdi',
-            titleIconClass: 'primary',
-            fn: () => {
-              this.openOverlay(ACCESS_VALID_OVERLAYS.MOBILE);
-            }
-          },
+          // {
+          //   color: 'white',
+          //   title: 'MEW wallet',
+          //   subtitle: 'Connect MEW wallet app to MEW web',
+          //   note: '',
+          //   rightIcon: require('@/assets/images/icons/icon-mew-wallet.png'),
+          //   titleIcon: 'mdi-shield-check',
+          //   titleIconType: 'mdi',
+          //   titleIconClass: 'primary',
+          //   fn: () => {
+          //     this.openMEWconnect();
+          //   }
+          // },
+          // /* Browser Extension */
+          // {
+          //   color: 'white',
+          //   title: 'Browser Extension',
+          //   subtitle: 'Use your web3 wallet with MEW.',
+          //   note: '',
+          //   rightIcon: require('@/assets/images/icons/icon-mew-cx.png'),
+          //   titleIcon: 'mdi-shield-check',
+          //   titleIconType: 'mdi',
+          //   titleIconClass: 'primary',
+          //   fn: () => {
+          //     this.openWeb3Wallet();
+          //   }
+          // },
+          // /* Hardware Wallet */
+          // {
+          //   color: 'white',
+          //   title: 'Hardware Wallets',
+          //   subtitle: 'Ledger, Trezor, KeepKey, FINNEY, BitBox',
+          //   note: '',
+          //   rightIcon: require('@/assets/images/icons/icon-hardware-wallet.png'),
+          //   titleIcon: 'mdi-shield-check',
+          //   titleIconType: 'mdi',
+          //   titleIconClass: 'primary',
+          //   fn: () => {
+          //     this.openOverlay(ACCESS_VALID_OVERLAYS.HARDWARE);
+          //   }
+          // },
+          // /* Mobile Apps */
+          // {
+          //   color: 'white',
+          //   title: 'Mobile Apps',
+          //   subtitle: 'WalletConnect, WalletLink',
+          //   note: '',
+          //   rightIcons: [
+          //     require('@/assets/images/icons/icon-wallet-connect.svg'),
+          //     require('@/assets/images/icons/icon-wallet-link.png')
+          //   ],
+          //   titleIcon: 'mdi-shield-check',
+          //   titleIconType: 'mdi',
+          //   titleIconClass: 'primary',
+          //   fn: () => {
+          //     this.openOverlay(ACCESS_VALID_OVERLAYS.MOBILE);
+          //   }
+          // },
           /* Software */
           {
             color: 'white',
-            style: 'outline',
+            // style: 'outline',
             title: 'Software',
             subtitle: 'Keystore files, Mnemonic phrase, Private key',
             note: 'NOT RECOMMENDED',
             rightIcon: '',
-            titleIcon: 'mdi-alert',
+            titleIcon: 'mdi-shield-check',
             titleIconType: 'mdi',
             titleIconClass: 'warning darken-1',
             fn: () => {

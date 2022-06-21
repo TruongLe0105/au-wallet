@@ -12,7 +12,7 @@
         </div>
         <h1 class="mb-9">{{ $t('home.features.heading') }}</h1>
       </v-sheet>
-      <div class="features-tabs-container">
+      <!-- <div class="features-tabs-container">
         <v-container>
           <mew-tabs
             class="mew-tabs-container d-flex align-center flex-column"
@@ -33,7 +33,7 @@
             </template>
           </mew-tabs>
         </v-container>
-      </div>
+      </div> -->
     </div>
 
     <div class="mobile-content d-block d-lg-none">
@@ -50,7 +50,7 @@
             </v-tab>
           </v-tabs>
 
-          <v-tabs-items v-model="mobileTab">
+          <!-- <v-tabs-items v-model="mobileTab">
             <v-tab-item v-for="item in mewTabs" :key="item.tab">
               <div class="mt-10 mb-5">
                 <home-features-send v-if="item.name === 'ETH'" />
@@ -59,7 +59,7 @@
                 <home-features-tokens v-if="item.name === 'Tokens'" />
               </div>
             </v-tab-item>
-          </v-tabs-items>
+          </v-tabs-items> -->
         </v-sheet>
       </v-container>
       <div class="py-2" />

@@ -25,13 +25,13 @@ export default {
   name: 'TheHomeLayout',
   components: {
     HomeLanding,
-    HomeFeatures,
-    HomeEthBlocks,
-    HomeSocials,
-    HomeWhyMew,
-    AppMewtopiaBlock,
-    AppGetStarted,
-    AppPartnersBlock
+    // HomeFeatures,
+    // HomeEthBlocks,
+    // HomeSocials,
+    // HomeWhyMew,
+    // AppMewtopiaBlock,
+    // AppGetStarted,
+    // AppPartnersBlock
   }
 };
 </script>

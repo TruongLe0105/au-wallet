@@ -17,8 +17,8 @@ export default {
   name: 'TheDefaultView',
   components: {
     TheDefaultHeader,
-    TheDefaultFooter,
-    TheDefaultWalletBanner
+    // TheDefaultFooter,
+    // TheDefaultWalletBanner
   }
 };
 </script>

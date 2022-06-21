@@ -8,12 +8,12 @@
       </v-sheet>
     </v-container>
 
-    <how-it-works-send />
+    <!-- <how-it-works-send />
     <how-it-works-swap />
     <how-it-works-dapps-center />
     <how-it-works-tokens />
     <how-it-works-more />
-    <app-get-started />
+    <app-get-started /> -->
   </div>
 </template>
 
