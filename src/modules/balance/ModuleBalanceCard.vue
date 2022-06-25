@@ -267,7 +267,8 @@ export default {
       openQR: false,
       showLogout: false,
       showVerify: false,
-      wallets: wallets
+      wallets: wallets,
+      isReloadedBalance: false
     };
   },
   computed: {
@@ -398,6 +399,11 @@ export default {
       return this.tokensList.length - 1;
     }
   },
+  watch: {
+    isReloadedBalance() {
+      this.setTokenAndEthBalance();
+    }
+  },
   methods: {
     ...mapActions('external', ['setTokenAndEthBalance']),
     ...mapActions('wallet', ['removeWallet']),
@@ -406,6 +412,11 @@ export default {
      */
     refresh() {
       this.setTokenAndEthBalance();
+    },
+    reloadBalance() {
+      setInterval(() => {
+        this.isReloadedBalance = !this.isReloadedBalance;
+      }, 30000); // 0.5 mins
     },
     /**
      * calls hardware wallet show address function
@@ -506,6 +517,9 @@ export default {
       this.closeLogout();
       this.removeWallet();
     }
+  },
+  created() {
+    this.reloadBalance();
   }
 };
 </script>
