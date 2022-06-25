@@ -19,7 +19,7 @@
     =====================================================================================
     -->
       <div style="max-width: 650px" class="mx-auto">
-        <a href="https://www.mewwallet.com/" target="_blank">
+        <!-- <a href="https://www.mewwallet.com/" target="_blank">
           <mew-button class="mb-5" color-theme="white" style="height: 160px">
             <div class="px-2 textDark--text text-left d-flex align-center">
               <div>
@@ -44,9 +44,9 @@
               </div>
             </div>
           </mew-button>
-        </a>
+        </a> -->
 
-        <mew-button
+        <!-- <mew-button
           class="mb-5"
           color-theme="white"
           style="height: 160px"
@@ -76,15 +76,15 @@
               />
             </div>
           </div>
-        </mew-button>
+        </mew-button> -->
 
         <div class="position--relative">
-          <div
+          <!-- <div
             class="orangePrimary--text mew-label"
             style="position: absolute; top: 15px; right: 25px"
           >
             NOT RECOMMENDED
-          </div>
+          </div> -->
           <mew-button
             class="mb-5"
             color-theme="white"
@@ -95,8 +95,8 @@
             <div class="px-2 textDark--text text-left">
               <div class="mb-2 d-flex align-center">
                 <div class="mew-heading-2 white--text">Software</div>
-                <v-icon dense color="orangePrimary" class="ml-1">
-                  mdi-alert
+                 <v-icon dense color="greenPrimary" class="ml-1">
+                  mdi-shield-check
                 </v-icon>
               </div>
               <div class="break-word white--text">
